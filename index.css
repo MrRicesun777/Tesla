@@ -99,6 +99,10 @@ header {
 
 .menu-btn-mobile {
   display: none;
+  cursor: pointer;
+  background: #e5e8ea;
+  padding: 0.4em 1em;
+  border-radius: 0.7em;
 }
 
 .sidebar {
@@ -428,10 +432,6 @@ footer li a {
   }
   .menu-btn-mobile {
     display: block;
-    cursor: pointer;
-    background: #e5e8ea;
-    padding: 0.4em 1em;
-    border-radius: 0.7em;
     position: absolute;
     right: 2em;
     top: 1em;
@@ -442,10 +442,10 @@ footer li a {
 /* Add specific mobile device handling */
 @media screen and (max-width: 768px) {
   .menu-btn-mobile {
-    display: block !important;
+    display: block;
   }
   .navbar ul {
-    display: none !important;
+    display: none;
   }
 }
 
