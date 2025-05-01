@@ -4,33 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tesla</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Tesla Features</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 </head>
 
 <body>
-
     <header>
-        <nav class="navbar">
-            <a href="#"><img src="assets/logo (1).png" class="brand"></a>
-            <ul>
+        <nav class="navbar" aria-label="Main navigation">
+            <img src="assets/logo.png" class="brand" alt="Tesla Logo">
+            <ul class="nav-items">
                 <li><a href="#">Model S</a></li>
                 <li><a href="#">Model 3</a></li>
                 <li><a href="#">Model X</a></li>
                 <li><a href="#">Model Y</a></li>
-                <li><a href="#">Solar Roof</a></li>
-                <li><a href="#">Solar Panels</a></li>
+                <li><a href="#">Cybertruck</a></li>
+                <li><a href="#">Powerwall</a></li>
+                <li><a href="#">Charging</a></li>
             </ul>
-            <ul>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Account</a></li>
-                <li><span class="menu-btn">Menu</span></li>
+            <ul class="nav-right">
+                <li><a href="#"><span class="material-icons">shopping_cart</span></a></li>
+                <li><a href="#"><span class="material-icons">account_circle</span></a></li>
             </ul>
             <span class="menu-btn-mobile">Menu</span>
         </nav>
 
-        <nav class="sidebar">
+        <nav class="sidebar" aria-label="Mobile menu navigation">
             <div class="close-btn">
                 <span class="material-symbols-outlined">
                     close
@@ -58,8 +59,9 @@
         <div class="sidebar-backdrop"></div>
         <div class="header-body">
             <h1 class="title">Roadster</h1>
-            <div>
-                <p>The quickest car in the world, with record-setting acceleration, range, and performance.</p>
+            <div class="header-body-content">
+                <p class="description">The quickest car in the world, with record-setting acceleration, range, and
+                    performance.</p>
                 <div class="stats">
                     <div>
                         <div class="gauge">
@@ -89,9 +91,6 @@
                             <small>Range</small>
                         </div>
                     </div>
-
-
-
                     <a href="#" class="btn-btn-mobile">Reserve Now</a>
                 </div>
             </div>
@@ -126,89 +125,124 @@
         </ul>
     </section>
 
-    <section class="about">
-        <img src="assets/back.jpg" alt="" data-aos="fade-up" data-aos-duration="1200">
-        <div class="about-text">
-            <h2>Designed for Performance and Aero Efficency</h2>
-            <p>As an all-electric supercar, Roadster maximizes the potential of aerodynamic engieering-with
-                record-setting Performance and efficiency.</p>
+    <section class="performance">
+        <div class="performance-content" data-aos="fade-up">
+            <h2>Performance</h2>
+            <div class="center-text-performance">
+                <p>Unmatched acceleration and handling with advanced aerodynamics and all-wheel drive.</p>
+            </div>
+            <div class="performance-image">
+                <img src="assets/roadstar.jpg" alt="Tesla Performance">
+            </div>
+            <div class="performance-features">
+                <div class="feature">
+                    <h3>All-Wheel Drive</h3>
+                    <p>Maximum traction and control in all conditions</p>
+                </div>
+                <div class="feature">
+                    <h3>Aerodynamics</h3>
+                    <p>Optimized for speed and efficiency</p>
+                </div>
+                <div class="feature">
+                    <h3>Regenerative Braking</h3>
+                    <p>Recovers energy while slowing down</p>
+                </div>
+            </div>
         </div>
     </section>
-
-    <!-- <section class="interior">
-        <img src="assets/interior.jpg" alt="" data-aos="fade-up" data-aos-duration="1200">
-        <div>
-            <h2>Interior</h2>
-            <p>The first supercar to set every Performance record and still fit seating for four.</p>
-        </div>
-    </section>
-
-    <section class="roof">
-        <div class="banner-img" data-aos="fade-up" data-aos-duration="1200"></div>
-        <div class="roof-text" data-aos="fade-up">
-            <h2>Glass Roof</h2>
-            <p>A lightweight, removable Glass Roof stores in the trunk for an open air, converitble driving experience.
-            </p>
-        </div>
-    </section> -->
 
     <section class="interior">
-        <img src="assets/interior.jpg" alt="Luxurious car interior" data-aos="fade-up" data-aos-duration="1200">
-        <div>
+        <div class="interior-content" data-aos="fade-up">
             <h2>Interior</h2>
-            <p>The first supercar to combine record-breaking performance with refined comfort. The cabin is meticulously
-                crafted with premium materials, ambient lighting, and advanced technology – all designed to deliver an
-                unmatched driving experience.</p>
-            <p>From hand-stitched leather seats to an intuitive touchscreen interface, every detail of the interior is
-                engineered for luxury and convenience, making every journey as exhilarating as the destination itself.
-            </p>
+            <p>Designed for performance and comfort, the Roadster features a minimalist interior with premium materials
+                and advanced technology.</p>
+            <div class="interior-image">
+                <img src="assets/intred.png" alt="Tesla Roadster Interior">
+            </div>
+            <div class="interior-stats">
+                <div>
+                    <h3>4</h3>
+                    <p>Seats</p>
+                </div>
+                <div>
+                    <h3>17"</h3>
+                    <p>Touchscreen</p>
+                </div>
+                <div>
+                    <h3>Premium</h3>
+                    <p>Audio System</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="roof">
-        <div class="banner-img" data-aos="fade-up" data-aos-duration="1200"></div>
-        <div class="roof-text" data-aos="fade-up">
-            <h2>Glass Roof</h2>
-            <p>Experience freedom like never before. The lightweight, removable glass roof transforms the vehicle into a
-                true convertible within seconds. Enjoy open-air driving while still benefiting from aerodynamic design
-                and structural rigidity.</p>
-            <p>When not in use, the roof stows seamlessly in the rear trunk, ensuring practicality doesn’t compromise
-                style. Whether under the stars or the open sky, the glass roof redefines driving pleasure.</p>
+    <section class="feature-section stay-connected">
+        <div class="feature-content">
+            <div class="feature-image">
+                <img src="assets/1.avif" alt="Tesla Connectivity Features">
+            </div>
+            <div class="feature-text">
+                <h2>Stay Connected</h2>
+                <p>Instantly connect with multi-device Bluetooth, or fast charge devices with wireless and 36-watt USB-C
+                    charging.</p>
+            </div>
         </div>
     </section>
 
-
-
-    <section class="iframe-video">
-        <div class="video-container">
-            <iframe src="https://player.vimeo.com/video/249563752?h=60746b212b&autoplay=1&loop=1" frameborder="0"
-                allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
-            </iframe>
+    <section class="feature-section immersive-sound">
+        <div class="feature-content">
+            <div class="feature-text">
+                <h2>Immersive Sound</h2>
+                <p>A 22-speaker, 960-watt audio system with Active Road Noise Reduction offers immersive listening and
+                    studio-grade sound quality.</p>
+            </div>
+            <div class="feature-image">
+                <img src="assets/MS-Interior-Grid-2-Audio-Desktop.jpg" alt="Tesla Audio System View">
+            </div>
         </div>
     </section>
 
-    <div class="action">
-        <p>Watch the Roadster Unveil . November 16, 2017</p>
-        <span class="line"></span>
-        <a href="#" class="btn">Reserve Now</a>
-        <a href="#" class="btn">Get Newsletter</a>
-    </div>
+    <section class="feature-section storage">
+        <div class="feature-content">
+            <div class="feature-image">
+                <img src="assets/3.avif" alt="Tesla Storage Space">
+            </div>
+            <div class="feature-text">
+                <h2>Room for Everything</h2>
+                <p>With front and rear trunks and fold-flat seats you can fit your bike without taking the wheel off—and
+                    your luggage too.</p>
+            </div>
+        </div>
     </section>
 
+    <section class="reserve">
+        <div class="reserve-content" data-aos="fade-up">
+            <h2>Reserve Your Roadster</h2>
+            <div class="center-text-performance">
+                <p>Be among the first to experience the future of electric performance.</p>
+            </div>
+            <div class="reserve-video">
+                <video autoplay muted loop playsinline>
+                    <source src="assets/Experience-Tesla.mp4" type="video/mp4">
+                </video>
+            </div>
+            <a href="#" class="btn">Reserve Now</a>
+        </div>
+    </section>
 
     <footer>
-        <ul>
-            <li><a href="#">Tesla &copy; 2025</a></li>
-            <li><a href="#">Privacy &amp; legal</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Carrers</a></li>
-            <li><a href="#">Get Newsletter</a></li>
-            <li><a href="#">Forums</a></li>
-            <li><a href="#">Locations</a></li>
-        </ul>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Tesla, Inc.</p>
+            <p>All Rights Reserved to Tesla</p>
+            <p>Designed by Sunny Biharie</p>
+            <p>❗️Disclaimer: This is not a real website, it is a project for my portfolio</p>
+
+        </div>
+        </div>
     </footer>
 
-    <script src="index.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
