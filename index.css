@@ -489,8 +489,8 @@ footer li a {
   }
 
   .sidebar-backdrop {
-    display: block;
-    opacity: 1;
+    display: none;
+    opacity: 0;
   }
 
   .menu-btn-mobile {
