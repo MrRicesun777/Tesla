@@ -486,6 +486,7 @@ footer li a {
     width: 100%;
     min-width: 100%;
     right: -100%;
+    display: none;
   }
 
   .sidebar-backdrop {

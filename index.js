@@ -16,6 +16,7 @@ menuBtnMobile.addEventListener('click', sidebarOpen);
 
 function sidebarOpen(){
     // change sidebar posistion
+    sidebar.style.display = "block";
     sidebar.style.right = "0";
     // show backdrop
     backdrop.style.display = "block";
@@ -24,23 +25,23 @@ function sidebarOpen(){
         backdrop.style.opacity="1";
     },50);
 
-// Disable scroll on body
-document.body.classList.add('sidebar-open-body');
-
+    // Disable scroll on body
+    document.body.classList.add('sidebar-open-body');
 }
 
 
 closeBtn.addEventListener('click', () => {
-// change sidebar position
-sidebar.style.right="-20em";
-// hide backdrop with a smooth transiton
-backdrop.style.opacity="0";
-// hide backdrop after the transition is done
-setTimeout(() => {
-    backdrop.style.display= "none";
-}, 300);
-// make the body scrollable again
-document.body.classList.remove('sidebar-open-body');
+    // change sidebar position
+    sidebar.style.right="-100%";
+    // hide backdrop with a smooth transiton
+    backdrop.style.opacity="0";
+    // hide backdrop after the transition is done
+    setTimeout(() => {
+        backdrop.style.display= "none";
+        sidebar.style.display = "none";
+    }, 300);
+    // make the body scrollable again
+    document.body.classList.remove('sidebar-open-body');
 });
 
 // custum scroll event (changing the img)
