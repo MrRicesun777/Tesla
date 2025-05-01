@@ -14,16 +14,15 @@ menuBtnMobile.addEventListener('click', sidebarOpen);
 
 // open sidebar function 
 
-function sidebarOpen(){
-    // change sidebar posistion
-    sidebar.style.display = "block";
-    sidebar.style.right = "0";
-    // show backdrop
-    backdrop.style.display = "block";
-
+function sidebarOpen() {
+    // Show backdrop
+    sidebarBackdrop.style.display = "block";
     setTimeout(() => {
-        backdrop.style.opacity="1";
-    },50);
+        sidebarBackdrop.style.opacity = "1";
+    }, 10);
+
+    // Open sidebar
+    sidebar.classList.add("sidebar-open");
 
     // Disable scroll on body
     document.body.classList.add('sidebar-open-body');
